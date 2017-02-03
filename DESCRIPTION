@@ -1,0 +1,12 @@
+Package: DenHaag
+Type: Package
+Title: Simulation of Populations with Managed Inbreeding
+Version: 0.1.0
+Author: John Woolliams & Theo Meuwissen
+Maintainer: John Woolliams <john.woolliams@roslin.ed.ac.uk>
+Description: Simulates successive generations of offspring with different options for selection and mating.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.0
+Imports: stats
