@@ -86,7 +86,8 @@ for (i in 1:length(isir))
   }
 avf <- avf/(2.0*toff)
 alph <- 1 - (1-avf)/(1-gc)
-print(paste0("Group coancestry ",gc," and average offspring F ",avf," with alpha ",alph))
+print(paste0("Group coancestry ",round(gc,digits=4)," and average offspring F ",
+             round(avf,digits=4)," with alpha ",round(alph,digits=4)))
 #
 # creating the offspring
 #

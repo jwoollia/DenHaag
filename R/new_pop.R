@@ -6,6 +6,7 @@
 #'    of the base is not an even integer, and the heritability is out of bounds.
 #' @export
 #' @importFrom stats rnorm
+#' @importFrom stats runif
 #
 new_pop <- function(nn,hh)
 {
@@ -25,6 +26,7 @@ if( (hh >= 1)|(hh <= 0) )
   return()
   }
 print(paste0("Creating ",nn," individuals for base generation"))
+burn_in <- stats::runif(n=1000)
 #
 xe <- stats::rnorm(n=nn,mean=0,sd=1)
 xbv <- stats::rnorm(n=nn,mean=0,sd=1)
